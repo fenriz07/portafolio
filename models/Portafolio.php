@@ -32,6 +32,8 @@ class Portafolio extends Model
     public $morphTo = [];
     public $morphOne = [];
     public $morphMany = [];
-    public $attachOne = [];
+    public $attachOne = [
+        'imagen' => 'System\Models\File',
+    ];
     public $attachMany = [];
 }

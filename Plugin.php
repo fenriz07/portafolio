@@ -64,12 +64,11 @@ class Plugin extends PluginBase
      */
     public function registerPermissions()
     {
-        return []; // Remove this line to activate
 
         return [
-            'cmantikweb.portafolio.some_permission' => [
+            'cmantikweb.portafolio.general' => [
                 'tab' => 'portafolio',
-                'label' => 'Some permission'
+                'label' => 'general'
             ],
         ];
     }
@@ -81,14 +80,12 @@ class Plugin extends PluginBase
      */
     public function registerNavigation()
     {
-        return []; // Remove this line to activate
-
         return [
             'portafolio' => [
                 'label'       => 'portafolio',
-                'url'         => Backend::url('cmantikweb/portafolio/mycontroller'),
+                'url'         => Backend::url('cmantikweb/portafolio/portafolio'),
                 'icon'        => 'icon-leaf',
-                'permissions' => ['cmantikweb.portafolio.*'],
+                'permissions' => ['cmantikweb.portafolio.general'],
                 'order'       => 500,
             ],
         ];

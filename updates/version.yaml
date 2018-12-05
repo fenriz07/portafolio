@@ -1,1 +1,5 @@
-1.0.1: First version of portafolio
+1.0.1: 
+      - First version of portafolio
+1.0.2: 
+     - Create table
+     - create_portafolios_table.php

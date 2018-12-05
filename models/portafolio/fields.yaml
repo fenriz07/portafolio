@@ -3,6 +3,56 @@
 # ===================================
 
 fields:
-    id:
-        label: ID
-        disabled: true
+    title:
+        label: Producto
+        type: text
+        required: true
+        span: full
+        comment: Ingrese el nombre del producto
+        placeholder: Ifluc
+
+tabs: 
+    fields:
+        description: 
+            type: textarea
+            required: true
+            span: full
+            tab: Descripcion
+            comment: Ingrese la descripcion del producto
+            placeholder: Software para Elaborar el Estado de Flujos de Efectivo bajo NIIF para PYMES 
+        b1:
+            label: Boton Iniciar Session
+            type: text
+            placeholder: Iniciar session
+            required: true
+            span: auto
+            tab: Botones 
+
+        b1url:
+            label: Enlace del sistema
+            type: text
+            placeholder: ifluc.facilcontabilidad.net
+            required: true
+            span: auto
+            tab: Botones 
+        b2:
+            label: Boton Comprar
+            type: text
+            placeholder: Comprar
+            required: true
+            span: auto
+            tab: Botones 
+
+        b2url:
+            label: Enlace de compra
+            type: text
+            placeholder: amazon.com
+            required: true
+            span: auto
+            tab: Botones 
+        imagen: 
+                type: fileupload
+                mode: image
+                span: auto
+                tab: Imagen
+ 
