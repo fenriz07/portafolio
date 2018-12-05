@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Portafolio
+
+# Model Form Field configuration
+form: $/cmantikweb/portafolio/models/portafolio/fields.yaml
+
+# Model Class name
+modelClass: Cmantikweb\Portafolio\Models\Portafolio
+
+# Default redirect location
+defaultRedirect: cmantikweb/portafolio/portafolio
+
+# Create page
+create:
+    title: Create Portafolio
+    redirect: cmantikweb/portafolio/portafolio/update/:id
+    redirectClose: cmantikweb/portafolio/portafolio
+
+# Update page
+update:
+    title: Edit Portafolio
+    redirect: cmantikweb/portafolio/portafolio
+    redirectClose: cmantikweb/portafolio/portafolio
+
+# Preview page
+preview:
+    title: Preview Portafolio
