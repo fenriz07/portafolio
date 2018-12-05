@@ -50,10 +50,9 @@ class Plugin extends PluginBase
      */
     public function registerComponents()
     {
-        return []; // Remove this line to activate
-
         return [
-            'Cmantikweb\Portafolio\Components\MyComponent' => 'myComponent',
+            Components\Portafolio::class => 'portafolio',
+
         ];
     }
 
@@ -67,7 +66,7 @@ class Plugin extends PluginBase
 
         return [
             'cmantikweb.portafolio.general' => [
-                'tab' => 'portafolio',
+                'tab' => 'Portafolio',
                 'label' => 'general'
             ],
         ];

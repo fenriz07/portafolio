@@ -1,0 +1,13 @@
+{% set portafolios = __SELF__.portafolios %}
+
+{% for software in portafolios %}
+
+    {{software.title}}
+    {{software.description}}
+    {{software.b1}}
+    {{software.b1url}}
+    {{software.b2}}
+    {{software.b2url}}
+    {{software.imagen.path}}
+
+{% endfor %}
