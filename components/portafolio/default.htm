@@ -2,12 +2,25 @@
 
 {% for software in portafolios %}
 
-    {{software.title}}
-    {{software.description}}
-    {{software.b1}}
-    {{software.b1url}}
-    {{software.b2}}
-    {{software.b2url}}
-    {{software.imagen.path}}
+
+<div class="caja">
+        <div class="imagen-caja">
+          <a href="{{software.b1url}}" class="ajuste-imagen">
+              <img class="ajuste-imagen" src="{{software.imagen.path}}" alt="">
+          </a>
+        </div>
+        <div class="descripcion-caja">
+          <p class="titulo-descripcion">{{software.title}}</p>
+          <p class="descripcion-producto">{{software.description}}</p>
+          <div class="botones">
+            <div class="iniciar-sesion">
+              <a href="{{software.b1url}}">{{software.b1}}</a>
+            </div>
+            <div class="comprar-ahora">
+              <a href="{{software.b2url}}">{{software.b2}}</a>
+            </div>
+          </div>
+        </div>
+</div>
 
 {% endfor %}
