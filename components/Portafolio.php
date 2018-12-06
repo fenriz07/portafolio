@@ -20,6 +20,6 @@ class Portafolio extends ComponentBase
 
     public function Portafolios()
     {
-        return MPortafolio::all();
+        return MPortafolio::orderBy('order','asc')->get();
     }
 }

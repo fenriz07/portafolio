@@ -3,3 +3,6 @@
 1.0.2: 
      - Create table
      - create_portafolios_table.php
+1.0.3:
+     - Add order camp
+     - add_order_to_portafolios_table.php

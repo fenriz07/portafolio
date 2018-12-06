@@ -55,4 +55,11 @@ tabs:
                 mode: image
                 span: auto
                 tab: Imagen
+        order:
+                label: Orden
+                type: number
+                placeholder: 1
+                comment: Ingrese un numero unico para el ordenamiento.
+                span: auto
+                tab: Configuraciones
  
